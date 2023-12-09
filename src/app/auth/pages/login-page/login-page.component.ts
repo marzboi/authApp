@@ -1,12 +1,13 @@
 import { Component, inject } from '@angular/core';
-import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { AuthService } from '../../services/auth.service';
+import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
+
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   templateUrl: './login-page.component.html',
-  styleUrl: './login-page.component.css',
+  styleUrls: ['./login-page.component.css'],
 })
 export class LoginPageComponent {
   private fb = inject(FormBuilder);
